@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBlackout</title>
+    <link rel="shortcut icon" href="../img/logo.jpg">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/adf9a180ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header><!--Aca esta el Logo-->
+        <div class="logo"> <img src="../img/logo.jpg" alt="logo de la compania">
+        </div>
+        <!--Aca la barra de menu-->
+        <label id="esconder-menu" for="burgermenu"> 
+            <i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="burgermenu" class="inputmenu">
+        <nav>
+            <ul class="menu">
+                <li class="menu1"><a href="../index.html">Home</a></li>
+                <li class="menu1"><a href="./Food.html">Food and Drinks</a></li>
+                <li class="menu1"><a href="./Book.html">Book a Table</a></li>
+                <li class="menu1"><a href="./Events.html">Events & Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main><!--Aca esta Contact Us-->
+        <h1> Contact Us</h1>
+        <form class="contact">
+            <div><label for="name">Name:</label></div>
+            <div><Input id="name" type="text" name="name"></Input></div>
+            <div><label for="email">Email:</label></div>
+            <div><Input id="email" type="email" name="email"></Input></div>
+            <div><label id="labelcoments" for="coments">Coments:</label> </div>
+            <div><textarea id="coments" name="coments" rows="5" cols="25"></textarea></div>
+            <div></div>
+            <div><input id="contact-us" type="submit" name="contact-us" value="Submit"></div>
+
+        </form>
+    </main>
+    <hr><!--Aca esta el Footer-->
+    <footer class="pie">
+        <div class="pies">
+            <a class="pies1" href="#"> About us </a>
+            <a class="pies1" href="#"> Work with us</a>
+            <a class="pies1" href="./contact.html"> Contact us</a>
+        </div>
+        <div Class="redes">
+            <span class="in"><i class="fa-brands fa-instagram"> </i></span>
+            <span class="fb"><i class="fa-brands fa-facebook"></i></span>
+            <span class="tt"><i class="fa-brands fa-tiktok"></i></span>
+            <span class="mp"> <i class="fa-solid fa-location-dot"></i></span>
+        </div>
+        
+            <a href="https://wa.me/+31627879693" target="_blank" class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+    </footer>
+</body>
+
+</html>

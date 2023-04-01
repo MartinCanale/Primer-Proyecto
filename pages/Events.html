@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBlackout</title>
+    <script src="https://kit.fontawesome.com/adf9a180ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../img/logo.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <header><!--Aca esta el Logo-->
+        <div class="logo"> <img src="../img/logo.jpg" alt="logo de la compania">
+        </div>
+        <!--Aca la barra de menu-->
+        <label id="esconder-menu" for="burgermenu"> 
+            <i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="burgermenu" class="inputmenu">
+        <nav>
+            <ul class="menu">
+                <li class="menu1"><a href="../index.html">Home</a></li>
+                <li class="menu1"><a href="./Food.html">Food and Drinks</a></li>
+                <li class="menu1"><a href="./Book.html">Book a Table</a></li>
+                <li class="menu1"><a href="./Events.html">Events & Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+
+    <!--aca comienza el BODY con Grids-->
+
+    <main>
+        <div>
+            <h1>Live Jazz Band</h1>
+            <h2>"The Diva Of The Jazz"</h2>
+        </div>
+        <div class="evento">
+            <img src="../img/Event.jpg">
+        </div>
+        <div class="event1">
+            <label>VIP Tickets</label>
+            <div><input class="qty" type="number" min="0"></div>
+            <label>Regular Tickets</label>
+            <div> <input class="qty" type="number" min="0">
+            </div>
+            <div></div>
+            <div><input type="button" id="go-2basquet" value="Go To Basquet"></div>
+        </div>
+    </main>
+
+
+
+    <br>
+    <hr>
+    <br><!--Aca esta el Footer-->
+    <footer class="pie">
+        <div class="pies">
+            <a class="pies1" href="#"> About us</a>
+            <a class="pies1" href="#"> Work with us</a>
+            <a class="pies1" href="./contact.html"> Contact us</a>
+        </div>
+        <div Class="redes">
+            <span class="in"><i class="fa-brands fa-instagram"> </i></span>
+            <span class="fb"><i class="fa-brands fa-facebook"></i></span>
+            <span class="tt"><i class="fa-brands fa-tiktok"></i></span>
+            <span class="mp"> <i class="fa-solid fa-location-dot"></i></span>
+        </div>
+        <a href="https://wa.me/+31627879693" target="_blank" class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </footer>
+</body>
+
+</html>
