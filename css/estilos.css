@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+body {
+    background-color: rgb(17, 16, 16)
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,700&display=swap');
 
@@ -24,19 +27,14 @@ nav {
 
 .menu {
     display: flex;
+    gap: 50px;
     padding: 10px;
     margin: auto;
-    font-weight: 700;
+    font-size: larger;
 }
 
-.menu li {
-    display: flex;
-    margin: 15px;
-}
-
-.menu1 {
-    width: 200px;
-    justify-content: center;
+.nav-item :hover {
+    color: white;
 }
 
 .inputmenu {
@@ -51,16 +49,19 @@ nav {
     transform: scale(1.3);
 }
 
+hr {
+    color: white;
+}
 
-/* Aca comienza el Body*/
-
+/* Titulos para toda la web*/
 
 h1 {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 h2 {
@@ -81,13 +82,11 @@ h2 {
     align-items: center;
 }
 
-.foto img {
-    height: 300px;
+.w-100 {
+    height: 600px;
     width: 600px;
-    padding: 10px;
+    border-radius: 10px;
 }
-
-
 
 p {
     color: white;
@@ -112,22 +111,18 @@ section p:hover {
     align-items: center;
 }
 
-
 .foodanddrinks-c1 {
     grid-column: 2/3;
     display: grid;
     justify-content: center;
     margin-bottom: 50px;
-
 }
-
 
 .foodanddrinks-c2 {
     grid-column: 2/3;
     display: grid;
     justify-content: center;
     margin-bottom: 50px;
-
 }
 
 .foodanddrinks-c3 {
@@ -135,9 +130,7 @@ section p:hover {
     display: grid;
     justify-content: center;
     margin-bottom: 80px;
-
 }
-
 
 .fuego {
     grid-column: 3/3;
@@ -148,16 +141,12 @@ section p:hover {
     width: 300px;
     margin-left: 100px;
     margin-bottom: 50px;
-
 }
-
 
 h2 {
     display: flex;
     justify-content: center;
 }
-
-
 
 /* Aca comienza Book a Table CSS*/
 
@@ -225,16 +214,15 @@ textarea {
 
 /* Aca comeinza Event &t Tickets*/
 
-.evento {
+.card {
     display: flex;
     justify-content: center;
-    margin: auto;
-    padding: 30px;
-    height: 400px;
-    width: 470px;
-    ;
+    background-color: rgb(17, 16, 16);
 }
 
+.h5 {
+    color: white;
+}
 
 .event1 {
     display: grid;
@@ -271,7 +259,7 @@ textarea {
     color: black;
 }
 
-/* Aca comienza el  Footer para todos los html*/
+/* Aca comienza el  FOOTER para todos los html*/
 
 .fb {
     background-color: blue;
@@ -282,7 +270,6 @@ textarea {
     justify-content: center;
     align-items: auto;
 }
-
 
 [class="fa-brands fa-facebook"] {
     background-color: blue;
@@ -299,35 +286,28 @@ textarea {
     align-items: center;
 }
 
-
 [class="fa-brands fa-instagram"] {
     background-color: rgb(241, 27, 109);
     color: white;
     font-size: larger;
-
 }
-
 
 .tt {
     background-color: rgb(0, 0, 0);
     padding: 5px;
     border-radius: 50px;
     color: rgb(245, 12, 167);
-
 }
 
 [class="fa-brands fa-tiktok"] {
     color: rgb(245, 12, 167);
     font-size: larger;
-
 }
-
 
 .mp {
     background-color: rgb(250, 250, 250);
     padding: 5px;
     border-radius: 50px;
-
 }
 
 [class="fa-solid fa-location-dot"] {
@@ -335,7 +315,6 @@ textarea {
     color: red;
     font-size: larger;
 }
-
 
 .pies {
     display: grid;
@@ -346,11 +325,14 @@ textarea {
     margin: 30px;
     padding: 20px;
     gap: 10px;
+    text-decoration: none;
+    gap: 80px;
 }
 
 
 .pies1 {
     font-size: 17px;
+    text-decoration: none;
 }
 
 .pies1:hover {
@@ -393,6 +375,7 @@ textarea {
     font-size: larger;
 }
 
+/* ACA COMIENZA EL RESPONSIVE PARA TODAS LAS PAGINAS*/
 
 @media screen and (max-width: 576px) {
 
@@ -404,7 +387,6 @@ textarea {
         height: 300px;
         object-fit: contain;
     }
-
 
     .menu {
         display: flex;
@@ -476,6 +458,12 @@ textarea {
         object-fit: contain;
     }
 
+
+    .w-100 {
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+    }
 
 
 }
