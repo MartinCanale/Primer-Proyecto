@@ -1,0 +1,389 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: rgb(17, 16, 16);
+    color: rgb(236, 215, 215);
+    text-decoration: none;
+
+    hr {
+        color: white;
+    }
+}
+/* EXTEND Variables en SASS*/
+
+.Centrarflex{display: flex;
+justify-content: center;
+align-items: center;}
+
+
+body {
+    background-color: rgb(17, 16, 16)
+}
+
+/* Aca comienza el Header (logo y menu)*/
+.logo {
+    height: 180px;
+    margin-top: 80px;
+}
+
+h1 {
+    @extend .Centrarflex;
+    margin: 30px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h2 {
+  @extend.Centrarflex;
+    margin: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    body {
+        background-color: rgb(17, 16, 16)
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,700&display=swap');
+
+    /* Aca comienza el Header (logo y menu)*/
+    .logo {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        width: 800px;
+        margin: auto;
+
+        .menu {
+            display: flex;
+            gap: 50px;
+            padding: 10px;
+            margin: auto;
+            font-size: larger;
+        }
+
+        .nav-item :hover {
+            color: white;
+        }
+
+        .menu1:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+.inputmenu {
+    display: none;
+}
+
+#esconder-menu {
+    display: none;
+}
+
+/* Aca comienza el Home*/
+.w-100 {
+    height: 750px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    margin: 10%;
+    padding: 20px;
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+/*Este es el Footer*/
+
+
+footer {
+    .col-xs-2 {
+        text-decoration: none;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 120px;
+    }
+
+    .redes {
+    @extend .Centrarflex;
+        margin-top: 30px;
+        padding: 0px;
+        gap: 20px;
+
+        .fb {
+            background-color: blue;
+            padding: 5px;
+            border-radius: 50px;
+            color: white;
+            @extend .Centrarflex;
+            
+
+            [class="fa-brands fa-facebook"] {
+                background-color: blue;
+                font-size: larger;
+            }
+        }
+
+        .in {
+            background-color: rgb(231, 39, 103);
+            padding: 5px;
+            border-radius: 50px;
+            color: white;
+            @extend .Centrarflex;
+
+            [class="fa-brands fa-instagram"] {
+                background-color: rgb(241, 27, 109);
+                color: white;
+                font-size: larger;
+            }
+        }
+
+        .tt {
+            background-color: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 50px;
+            color: rgb(245, 12, 167);
+            @extend .Centrarflex;
+
+            [class="fa-brands fa-tiktok"] {
+                color: rgb(245, 12, 167);
+                font-size: larger;
+            }
+        }
+
+        .mp {
+            background-color: rgb(250, 250, 250);
+            padding: 5px;
+            border-radius: 50px;
+            @extend .Centrarflex;
+
+            [class="fa-solid fa-location-dot"] {
+                background-color: white;
+                color: red;
+                font-size: larger;
+            }
+        }
+    }
+
+    .whatsapp {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(52, 190, 52);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        line-height: 50px;
+        font-size: 24px;
+        color: white;
+
+        &:hover {
+            background-color: rgb(81, 182, 81);
+            transform: scale(1.2);
+        }
+
+        [class="fa-brands fa-whatsapp"] {
+            background-color: rgb(81, 182, 81);
+            color: white;
+            font-size: larger;
+        }
+    }
+
+}
+
+
+    /* ACA COMIENZA BOOK*/
+    .book1 {
+        display: grid;
+        grid-template-columns: 100px 300px;
+        grid-template-rows: 50px 50px 50px 50px 80px 50px;
+        justify-content: center;
+        align-items: center;
+
+        #name {
+            margin: 10px;
+            background-color: rgb(236, 232, 232);
+            color: black;
+        }
+
+        #email {
+            margin: 10px;
+            background-color: rgb(236, 232, 232);
+            color: black;
+        }
+
+        #date {
+            margin: 10px;
+            background-color: rgb(236, 232, 232);
+            color: black;
+        }
+
+        #time {
+            margin: 10px;
+            background-color: rgb(236, 232, 232);
+            color: black;
+        }
+
+        #book {
+            margin: 10px;
+            background-color: green;
+            color: white;
+            border-color: gray;
+        }
+
+        textarea {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            border-color: gray;
+            margin-left: 10px;
+        }
+    }
+
+    /* ACA COMIENZA EVENTS*/
+    .card {
+        @extend .Centrarflex;
+        background-color: rgb(17, 16, 16);
+
+        .h5 { @extend .Centrarflex;
+            color: white;
+        }
+        
+    }
+
+
+    .ticketcard {
+        @extend .Centrarflex;
+    }
+
+    /*ACA COMIENZA CONTACT US*/
+
+    .contact {
+        display: grid;
+        grid-template-columns: 100px 300px;
+        grid-template-rows: 50px 50px 100px 100px;
+        justify-content: center;
+        align-items: center;
+
+        #contact-us {
+            margin: 12px;
+            background-color: green;
+            color: white;
+            border-color: gray;
+        }
+
+        #coments {
+            background-color: white;
+        }
+
+        #email {
+            background-color: white;
+        }
+
+        #name {
+            background-color: white;
+        }
+    }
+
+
+
+    /* ACA COMIENZA EL RESPONSIVE*/
+
+@media screen and (max-width: 576px) {
+
+    .logo {
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    /*  el menu del responsive*/
+    header {
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+            height: 300px;
+            width: 300px;
+            font-weight: 500;
+
+            .menu li {
+                display: flex;
+                margin: 15px;
+                padding: 5px;
+            }
+        }
+
+        #esconder-menu {
+            display: block;
+        }
+
+        label i {
+            font-size: 35px;
+            margin: 20px
+        }
+
+        nav {
+            transform: translateX(-576px);
+            transition: 1s;
+            position: absolute;
+            background-color: rgb(17, 16, 16);
+            justify-content: flex-start;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .inputmenu:checked+nav {
+            transform: translate(0);
+        }
+    }
+
+    /* HOME*/
+
+    .w-100 {
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .event {
+        gap: 150px;
+    }
+
+/*FOOTER*/
+
+.whatsapp {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(52, 190, 52);
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: white;
+}
+}
