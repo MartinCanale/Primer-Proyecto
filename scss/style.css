@@ -1,8 +1,8 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  background-color: rgb(17, 16, 16);
   color: rgb(236, 215, 215);
   text-decoration: none;
 }
@@ -10,155 +10,158 @@
   color: white;
 }
 
-/* EXTEND Variables en SASS*/
-.Centrarflex, .ticketcard, .card .h5, .card, footer .redes .mp, footer .redes .tt, footer .redes .in, footer .redes .fb, footer .redes, h2, h1 {
+body {
+  background-image: url("/img/pexels-joão-vítor-heinrichs-1787044.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+  /* EXTEND Variables en SASS*/
+  /* Aca comienza el Header (logo y menu)*/
+  /* Aca comienza el Home*/
+  /*Este es el Footer*/
+  /* ACA COMIENZA BOOK*/
+  /* ACA COMIENZA EVENTS*/
+  /*ACA COMIENZA CONTACT US*/
+  /* ACA COMIENZA EL FOOD AND DRINKS*/
+}
+body .Centrarflex, body .ticketcard, body .card .h5, body .card, body footer .redes .mp, body footer .redes .tt, body footer .redes .in, body footer .redes .fb, body footer .redes, body h2, body h1, body .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-body {
+body .logo {
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: rgb(17, 16, 16);
 }
-
-/* Aca comienza el Header (logo y menu)*/
-.logo {
-  height: 180px;
-  margin-top: 80px;
-}
-
-h1 {
-  margin: 30px;
+body h1 {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-shadow: 1px 2px 2px rgb(87, 87, 87);
   font-size: xx-large;
+  padding-top: 300px;
+  text-align: center;
 }
-
-h2 {
+body h2 {
   margin: 20px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  color: rgb(201, 204, 39);
 }
-
-header {
+body header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
   @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,700&display=swap");
   /* Aca comienza el Header (logo y menu)*/
 }
-header body {
-  background-color: rgb(17, 16, 16);
-}
-header .logo {
-  text-align: center;
-}
-header nav {
+body header nav {
   display: flex;
   justify-content: center;
-  width: 800px;
-  margin: auto;
+  width: 100%;
+  background-color: rgb(17, 16, 16);
 }
-header nav .menu {
+body header nav .minav {
+  color: rgb(201, 204, 39);
+}
+body header nav .menu {
   display: flex;
   gap: 50px;
-  padding: 10px;
-  margin: auto;
   font-size: larger;
+  background-color: rgb(17, 16, 16);
+  margin-bottom: 20px;
 }
-header nav .nav-item :hover {
+body header nav .nav-item :hover {
   color: white;
 }
-header nav .menu1:hover {
+body header nav .menu1:hover {
   transform: scale(1.3);
 }
-
-.inputmenu {
+body .inputmenu {
   display: none;
 }
-
-#esconder-menu {
+body #esconder-menu {
   display: none;
 }
-
-/* Aca comienza el Home*/
-.w-100 {
+body .w-100 {
   height: 750px;
   width: 100%;
   border-radius: 10px;
 }
-
-p {
-  color: white;
+body p {
+  color: rgb(201, 204, 39);
   text-align: center;
   font-size: medium;
   font-family: "Roboto", sans-serif;
   margin: 10%;
   padding: 20px;
+  text-shadow: 3px 3px 3px rgb(10, 10, 10);
 }
-p:hover {
+body p:hover {
   transform: scale(1.2, 1.2);
 }
-
-/*Este es el Footer*/
-footer .col-xs-2 {
+body footer .col-xs-2 {
   text-decoration: none;
   margin-bottom: 10px;
   margin-top: 10px;
   width: 120px;
 }
-footer .redes {
+body footer .redes {
   margin-top: 30px;
   padding: 0px;
   gap: 20px;
 }
-footer .redes .fb {
+body footer .redes .fb {
   background-color: blue;
   padding: 5px;
   border-radius: 50px;
   color: white;
 }
-footer .redes .fb [class="fa-brands fa-facebook"] {
+body footer .redes .fb [class="fa-brands fa-facebook"] {
   background-color: blue;
   font-size: larger;
 }
-footer .redes .in {
+body footer .redes .in {
   background-color: rgb(231, 39, 103);
   padding: 5px;
   border-radius: 50px;
   color: white;
 }
-footer .redes .in [class="fa-brands fa-instagram"] {
+body footer .redes .in [class="fa-brands fa-instagram"] {
   background-color: rgb(241, 27, 109);
   color: white;
   font-size: larger;
 }
-footer .redes .tt {
+body footer .redes .tt {
   background-color: rgb(0, 0, 0);
   padding: 5px;
   border-radius: 50px;
   color: rgb(245, 12, 167);
 }
-footer .redes .tt [class="fa-brands fa-tiktok"] {
+body footer .redes .tt [class="fa-brands fa-tiktok"] {
   color: rgb(245, 12, 167);
   font-size: larger;
 }
-footer .redes .mp {
+body footer .redes .mp {
   background-color: rgb(250, 250, 250);
   padding: 5px;
   border-radius: 50px;
 }
-footer .redes .mp [class="fa-solid fa-location-dot"] {
+body footer .redes .mp [class="fa-solid fa-location-dot"] {
   background-color: white;
   color: red;
   font-size: larger;
 }
-footer .last-line {
+body footer .last-line {
   color: rgb(139, 135, 135);
   margin-top: 20px;
   margin-bottom: 5px;
 }
-
-.whatsapp {
+body .whatsapp {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -173,110 +176,157 @@ footer .last-line {
   font-size: 24px;
   color: white;
 }
-.whatsapp:hover {
+body .whatsapp:hover {
   background-color: rgb(81, 182, 81);
   transform: scale(1.2);
 }
-.whatsapp [class="fa-brands fa-whatsapp"] {
+body .whatsapp [class="fa-brands fa-whatsapp"] {
   background-color: rgb(81, 182, 81);
   color: white;
   font-size: larger;
 }
-
-/* ACA COMIENZA BOOK*/
-.book1 {
+body .book1 {
   display: grid;
   grid-template-columns: 100px 300px;
-  grid-template-rows: 50px 50px 50px 50px 80px 50px;
+  grid-template-rows: 50px 50px 50px 80px 90px 80px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
+  margin-top: 68px;
 }
-.book1 #name {
+body .book1 #name {
+  margin-top: 10px;
+  background-color: rgb(236, 232, 232);
+  color: black;
+  border-radius: 10px;
+}
+body .book1 #email {
   margin: 10px;
   background-color: rgb(236, 232, 232);
   color: black;
+  border-radius: 10px;
 }
-.book1 #email {
+body .book1 #date {
   margin: 10px;
   background-color: rgb(236, 232, 232);
   color: black;
+  border-radius: 10px;
 }
-.book1 #date {
+body .book1 #time {
   margin: 10px;
+  margin-bottom: 10px;
   background-color: rgb(236, 232, 232);
   color: black;
+  border-radius: 10px;
 }
-.book1 #time {
+body .book1 #book {
   margin: 10px;
-  background-color: rgb(236, 232, 232);
-  color: black;
-}
-.book1 #book {
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   background-color: green;
   color: white;
   border-color: gray;
+  border-radius: 10px;
+  width: 70px;
 }
-.book1 textarea {
+body .book1 textarea {
   background-color: rgb(255, 255, 255);
   color: white;
   border-color: gray;
   margin-left: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
-
-/* ACA COMIENZA EVENTS*/
-.card {
+body .card {
   background-color: rgb(17, 16, 16);
 }
-.card .h5 {
+body .card .h5 {
   color: white;
 }
-
-/*ACA COMIENZA CONTACT US*/
-.contact {
+body .event {
+  margin-bottom: 280px;
+}
+body .btn {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+body .contact {
   display: grid;
-  grid-template-columns: 100px 300px;
-  grid-template-rows: 50px 50px 100px 100px;
+  grid-template-columns: 130px 300px;
+  grid-template-rows: 60px 80px 130px 110px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 130px;
+  margin-top: 50px;
+  font-size: larger;
 }
-.contact #contact-us {
+body .contact #contact-us {
   margin: 12px;
   background-color: green;
   color: white;
   border-color: gray;
+  border-radius: 10px;
+  width: 80px;
 }
-.contact #coments {
+body .contact #coments {
   background-color: white;
+  border-radius: 10px;
 }
-.contact #email {
+body .contact #email {
   background-color: white;
+  border-radius: 10px;
+  width: 242px;
+  height: 35px;
 }
-.contact #name {
+body .contact #name {
   background-color: white;
+  border-radius: 10px;
+  width: 242px;
+  height: 35px;
+}
+body .mainfood {
+  margin-bottom: 150px;
+}
+body a {
+  text-decoration: none;
+  font-size: large;
+  color: rgb(192, 192, 22);
+  text-shadow: 3px 3px 3px rgb(10, 10, 10);
+}
+body a:hover {
+  transform: scale(1.2, 1.2);
 }
 
 /* ACA COMIENZA EL RESPONSIVE*/
 @media screen and (max-width: 576px) {
   .logo {
-    height: 150px;
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(17, 16, 16);
   }
   h1 {
     font-size: x-large;
   }
   /*  el menu del responsive*/
+  header .nav-item {
+    width: 100%;
+    font-size: xx-large;
+  }
   header .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding: 40px;
-    height: 100hv;
-    width: 300px;
     font-weight: 500;
   }
-  header .menu .menu li {
+  header .menu li {
     display: flex;
     margin: 15px;
     padding: 5px;
@@ -292,9 +342,10 @@ footer .last-line {
     transform: translateX(-576px);
     transition: 1s;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     background-color: rgb(17, 16, 16);
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -307,12 +358,101 @@ footer .last-line {
   }
   /* HOME*/
   .w-100 {
-    height: 300px;
+    max-height: 400px;
     width: 100%;
     border-radius: 10px;
   }
+  h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
   .event {
     gap: 150px;
+  }
+  /*BOOK A TABLE*/
+  .book1 {
+    margin-bottom: 70px;
+    font-size: larger;
+  }
+  .book1 #name {
+    margin: 10px;
+    background-color: rgb(236, 232, 232);
+    color: black;
+    border-radius: 10px;
+  }
+  .book1 #email {
+    margin: 10px;
+    background-color: rgb(236, 232, 232);
+    color: black;
+    border-radius: 10px;
+  }
+  .book1 #date {
+    margin: 10px;
+    background-color: rgb(236, 232, 232);
+    color: black;
+    border-radius: 10px;
+  }
+  .book1 #time {
+    margin: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(236, 232, 232);
+    color: black;
+    border-radius: 10px;
+  }
+  .book1 #book {
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: green;
+    color: white;
+    border-color: gray;
+    border-radius: 10px;
+    width: 75px;
+  }
+  .book1 textarea {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-color: gray;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  /*CONTACT US*/
+  .contact {
+    margin-bottom: 50px;
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 130px 350px;
+    grid-template-rows: 70px 70px 180px 130px;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+  }
+  .contact #contact-us {
+    margin: 12px;
+    background-color: green;
+    color: white;
+    border-color: gray;
+    border-radius: 10px;
+    width: 90px;
+  }
+  .contact #coments {
+    background-color: white;
+    border-radius: 10px;
+  }
+  .contact #email {
+    background-color: white;
+    border-radius: 10px;
+    width: 285px;
+    height: 35px;
+  }
+  .contact #name {
+    background-color: white;
+    border-radius: 10px;
+    width: 285px;
+    height: 35px;
   }
   /*FOOTER*/
   .whatsapp {
@@ -322,12 +462,15 @@ footer .last-line {
     border-radius: 50%;
     background-color: rgb(52, 190, 52);
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 15px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
     text-align: center;
     line-height: 50px;
     font-size: 24px;
     color: white;
+  }
+  .elfooter {
+    font-size: large;
   }
 }/*# sourceMappingURL=style.css.map */
