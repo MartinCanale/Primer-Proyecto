@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -11,7 +10,7 @@
 }
 
 body {
-  background-image: url("/img/pexels-joão-vítor-heinrichs-1787044.jpg");
+  background-image: url("../img/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0px;

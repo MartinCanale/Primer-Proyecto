@@ -4,14 +4,15 @@
     box-sizing: border-box;
     color: rgb(236, 215, 215);
     text-decoration: none;
+    
 
     hr {
-        color: white;
+        color: white; 
     }
 }
 
 body {
-    background-image: url("/img/pexels-joão-vítor-heinrichs-1787044.jpg");
+    background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0px;
@@ -45,7 +46,6 @@ body {
         font-size: xx-large;
         padding-top: 300px;
         text-align: center
-
     }
 
     h2 {
@@ -108,7 +108,7 @@ body {
     }
 
 
-  
+
 
 
 
@@ -318,11 +318,12 @@ body {
     .event {
         margin-bottom: 280px;
     }
-.btn {
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
 
 
     /*ACA COMIENZA CONTACT US*/
@@ -382,6 +383,8 @@ body {
             transform: scale(1.2, 1.2);
         }
     }
+
+
 }
 
 /* ACA COMIENZA EL RESPONSIVE*/
@@ -464,11 +467,12 @@ body {
         border-radius: 10px;
     }
 
-h1{display: flex;
-justify-content: center;
-text-align: center;
+    h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
 
-}
+    }
 
 
 
